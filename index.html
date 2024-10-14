@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý chi tiêu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quản lý chi tiêu cá nhân</h1>
+
+        <div class="initial-balance">
+            <h3>Số tiền bạn có:</h3>
+            <input type="number" id="initial-balance-input" placeholder="Nhập số tiền ban đầu">
+            <button id="set-initial-balance">Xác nhận</button>
+        </div>
+
+        <div class="balance">
+            <h2>Số dư: <span id="balance">0 VND</span></h2>
+        </div>
+
+        <div class="transaction-form">
+            <h3>Thêm giao dịch</h3>
+            <form id="transaction-form">
+                <input type="text" id="description" placeholder="Mô tả giao dịch" required>
+                <input type="number" id="amount" placeholder="Số tiền" required>
+                <button type="submit">Thêm</button>
+            </form>
+        </div>
+
+        <div class="transaction-list">
+            <h3>Lịch sử giao dịch</h3>
+            <ul id="transactions"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
